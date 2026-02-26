@@ -1,1 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Baby's Back 💕</title>
 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    background: linear-gradient(135deg,#ff758c,#ff7eb3,#ffc3a0);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+}
+
+.container{
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(15px);
+    border-radius:25px;
+    padding:35px 30px;
+    max-width:700px;
+    width:92%;
+    box-shadow:0 0 30px rgba(255,0,100,0.35);
+    animation:fadeIn 2s ease;
+}
+
+h1{
+    text-align:center;
+    font-family:'Great Vibes',cursive;
+    font-size:3em;
+    color:white;
+    margin-bottom:15px;
+}
+
+p{
+    color:#fff;
+    font-size:1.05em;
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+.poem{
+    margin-top:25px;
+    padding:20px;
+    border-radius:18px;
+    background: rgba(255,255,255,0.15);
+    border:1px solid rgba(255,255,255,0.25);
+}
+
+.poem h2{
+    text-align:center;
+    color:white;
+    margin-bottom:15px;
+}
+
+.final{
+    margin-top:30px;
+    text-align:center;
+    font-size:1.1em;
+    font-weight:500;
+}
+
+.heart{
+    position:fixed;
+    bottom:-10px;
+    color:rgba(255,255,255,0.7);
+    font-size:18px;
+    animation:float 7s linear infinite;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(40px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes float{
+    from{transform:translateY(0); opacity:1;}
+    to{transform:translateY(-120vh); opacity:0;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>My Baby's Back 💕</h1>
+
+    <p><b>Hey Kiki,</b></p>
+
+    <p>
+        I don’t even know where to start, because there’s so much I’ve been holding in while you were away. 
+        Every day you were in school, there was this quiet space next to me that only you can fill. 
+        I missed your voice, your laugh, your presence, your energy — I missed <b>you</b> in every possible way.
+    </p>
+
+    <p>
+        The days felt longer without you. Nights felt colder. Even the little things reminded me of you — 
+        random songs, quiet moments, late thoughts, and soft memories that kept replaying in my head. 
+        You were always on my mind, and not a single day passed without me wishing you were here with me.
+    </p>
+
+    <p>
+        Now that you’re back, my heart finally feels complete again. You don’t understand how much comfort 
+        your presence brings me. You are my peace, my happiness, my favorite feeling. Having you back feels 
+        like breathing fresh air after holding my breath for too long.
+    </p>
+
+    <div class="poem">
+        <h2>A Love Poem for You 💌</h2>
+
+        <p>
+            I missed you in the silence of the night,<br>
+            In the lonely stars, in the soft moonlight.<br>
+            I missed your voice, your gentle touch,<br>
+            Every little thing — I missed you <b>that much.</b>
+        </p>
+
+        <p>
+            Distance tried, but love stood strong,<br>
+            Every second felt way too long.<br>
+            My heart stayed yours, loyal and true,<br>
+            Counting down the days till I’d be back with you.
+        </p>
+
+        <p>
+            Now you’re here, and the world feels right,<br>
+            Colors are brighter, days feel light.<br>
+            My heart beats louder, my smile feels new,<br>
+            Because my favorite place is right with you.
+        </p>
+    </div>
+
+    <div class="final">
+        <p>
+            And now… brace yourself 😌<br><br>
+            Because I’ve been saving up all the <b>“I love yous”</b>, all the hugs, all the kisses, 
+            all the sweet words, all the affection, and all the love I couldn’t give you while you were away — 
+            and trust me… <b>I’m about to FLOOD you with them.</b>
+        </p>
+
+        <p>
+            So get ready, beautiful…<br>
+            Because your boyfriend is about to be extremely, unapologetically, ridiculously in love with you. 💕
+        </p>
+
+        <p><b>Welcome back, my baby. I missed you more than words can ever explain. 😌❤️</b></p>
+    </div>
+</div>
+
+<script>
+function createHeart(){
+    const heart = document.createElement('div');
+    heart.className = 'heart';
+    heart.innerHTML = '❤';
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.fontSize = (15 + Math.random() * 20) + 'px';
+    heart.style.animationDuration = (5 + Math.random() * 5) + 's';
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 7000);
+}
+
+setInterval(createHeart, 400);
+</script>
+
+</body>
+</html>
